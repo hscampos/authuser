@@ -55,7 +55,7 @@ public class UserDto {
     private String cpf;
 
     @NotBlank(groups = UserView.ImagePut.class)
-    @JsonView({UserView.ImagePut.class})
+    @JsonView({UserView.ImagePut.class, UserView.RegistrationPost.class})
     private String imageUrl;
 
 }
